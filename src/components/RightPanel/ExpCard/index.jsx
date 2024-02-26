@@ -1,13 +1,11 @@
 import Bubble from "./Bubble";
 
-const ExpCard = (props) => {
-  const { time, place, position, children, expCardReff } = props;
-
+const ExpCard = ({ time, place, position, children, expCardReff }) => {
+  
   const fromExpCard = expCardReff;
   return (
     <div className="mb-4" id="experience" ref={fromExpCard}>
       <div
-        hfref=""
         className="group flex gap-10 hover:bg-color-paragpraph hover:bg-opacity-10 transition-all rounded py-3 px-5 cursor-pointer"
       >
         <p className="text-color-paragpraph text-xs mt-[5px] w-[7rem]">
