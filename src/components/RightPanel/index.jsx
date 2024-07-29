@@ -17,7 +17,9 @@ const RightPanel = ({ expReff, aboutReff, projectReff }) => {
         place={"Universitas Siliwangi"}
         position={"Bootcamp Web Development"}
         expCardReff={expReff}
-      ></ExpCard>
+      >
+        Participating in a web development bootcamp was a transformative experience that significantly boosted my skills and confidence in the field. The intensive, hands-on nature of the program ensured that I quickly learned and applied new concepts, from front-end technologies like HTML, CSS, and JavaScript.
+      </ExpCard>
       <h3 className="px-5 py-10 text-color-highlight hover:text-color-bubleText font-medium transition-all">
         Project
       </h3>
