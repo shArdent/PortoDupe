@@ -1,48 +1,33 @@
-import image from "../../../assets/ss.png";
+import image from "../../../../public/ss.png";
+import sewaMobil from "../../../../public/sewa-mobil.png";
+import donorkan from "../../../../public/donorkan.png";
 
+// eslint-disable-next-line react/prop-types
 const ProjectCard = ({ projectCardReff }) => {
   const data = [
     {
       id: 1,
-      judul: "clone protofolio",
+      gambar: image,
+      judul: "Portofolio",
+      href : "https://github.com/shArdent/PortoDupe",
       description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique corporis in ipsum amet, minus consequatur voluptates, veniam libero delectus beatae minima quibusdam cupiditate id, est corrupti accusamus perferendis provident maiores.",
+        "Portfolio using design from Brittany Chiang. Build with React js vite and Tailwind CSS and deployed with vercel.(not responsive yet)",
     },
     {
       id: 2,
-      judul: "clone protofolio",
+      gambar: sewaMobil,
+      judul: "Sewa-Mobil",
+      href : "https://github.com/shArdent/sewa-mobil",
       description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique corporis in ipsum amet, minus consequatur voluptates, veniam libero delectus beatae minima quibusdam cupiditate id, est corrupti accusamus perferendis provident maiores.",
+        "The car rental CRUD web application using Next.js, NextAuth, Supabase and Prisma ORM. This app manage CRUD operations for rental cars.",
     },
     {
       id: 3,
-      judul: "clone protofolio",
+      gambar: donorkan,
+      judul: "Donor-kan",
+      href : "https://github.com/shArdent/ICONIC",
       description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique corporis in ipsum amet, minus consequatur voluptates, veniam libero delectus beatae minima quibusdam cupiditate id, est corrupti accusamus perferendis provident maiores.",
-    },
-    {
-      id: 4,
-      judul: "clone protofolio",
-      description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique corporis in ipsum amet, minus consequatur voluptates, veniam libero delectus beatae minima quibusdam cupiditate id, est corrupti accusamus perferendis provident maiores.",
-    },
-    {
-      id: 5,
-      judul: "clone protofolio",
-      description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique corporis in ipsum amet, minus consequatur voluptates, veniam libero delectus beatae minima quibusdam cupiditate id, est corrupti accusamus perferendis provident maiores.",
-    },
-    {
-      id: 6,
-      judul: "clone protofolio",
-      description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique corporis in ipsum amet, minus consequatur voluptates, veniam libero delectus beatae minima quibusdam cupiditate id, est corrupti accusamus perferendis provident maiores.",
-    },
-    {
-      id: 7,
-      judul: "clone protofolio",
-      description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique corporis in ipsum amet, minus consequatur voluptates, veniam libero delectus beatae minima quibusdam cupiditate id, est corrupti accusamus perferendis provident maiores.",
+        "Web application to manage blood request and donation. Build with next JS, tailwind and TypeScript. (currently still in development)",
     },
   ];
 
@@ -59,7 +44,7 @@ const ProjectCard = ({ projectCardReff }) => {
             >
               <div>
                 <img
-                  src={image}
+                  src={item.gambar}
                   alt="Thumbnail"
                   className="text-color-paragpraph text-xs mt-[5px] min-w-[7rem]"
                   width={100}
@@ -67,9 +52,9 @@ const ProjectCard = ({ projectCardReff }) => {
                 />
               </div>
               <div className="flex flex-col gap-3">
-                <h3 className="text-color-highlight text-2xl group-hover:text-color-bubleText">
+                <a href={item.href}className="text-color-highlight text-2xl group-hover:text-color-bubleText">
                   {item.judul}
-                </h3>
+                </a>
                 <p className="text-color-paragpraph text-sm">
                   {item.description}
                 </p>
@@ -78,12 +63,6 @@ const ProjectCard = ({ projectCardReff }) => {
           );
         })}
       </ul>
-      <h3
-        href=""
-        className="px-5 py-10 text-color-highlight hover:text-color-bubleText font-medium transition-all"
-      >
-        <a href="">View Full Project Archieve</a>
-      </h3>
     </div>
   );
 };

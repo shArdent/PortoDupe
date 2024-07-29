@@ -1,29 +1,31 @@
-const About = ({aboutReff}) => {
-
-  const fromAboutReff = aboutReff
+/* eslint-disable react/prop-types */
+const About = ({ aboutReff }) => {
+  const fromAboutReff = aboutReff;
 
   return (
-    <div ref={fromAboutReff} className="flex flex-col gap-5 text-color-paragpraph mb-16 px-5" id="about">
+    <div
+      ref={fromAboutReff}
+      className="flex flex-col gap-5 text-color-paragpraph mb-16 px-5"
+      id="about"
+    >
       <p>
-        My main focus these day is learning frameworks, libraries and databases
-        to improve my skill as a web developer. I'd really like to learn
-        something new, Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Placeat officia, aliquid animi soluta rem, perferendis, mollitia ex
-        consequatur voluptates vel quo nam officiis impedit temporibus possimus
-        deleniti facilis natus cum.
+        I am currently focused on learning frameworks, libraries, and databases
+        to enhance my skills as a web developer. Passionate about technology, I
+        am always eager to dive into new tools and methodologies that can help
+        me grow professionally. This continuous learning process allows me to
+        stay updated with the latest trends and advancements in the web
+        development industry, ensuring that I can create efficient and
+        innovative solutions.
       </p>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. A doloremque
-        consequuntur sed iusto assumenda culpa inventore amet aliquam possimus
-        obcaecati qui, suscipit praesentium laudantium ut! Itaque, repellat
-        quod! Nemo, eaque! Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Possimus rerum iste quas cum officiis officia saepe iusto, id
-        esse! Corporis neque tenetur aperiam adipisci deleniti in vero deserunt
-        maxime. Praesentium.
-      </p>
-      <p>
-        In my free time, I usually play some games, watching movies, hanging out
-        with my friends, or clean my room
+        In addition to my professional pursuits, I have a variety of hobbies
+        that I engage in during my free time. Playing games is one of my
+        favorite pastimes, as it not only provides entertainment but also
+        sharpens my problem-solving skills and strategic thinking. Watching
+        movies is another way I unwind, offering a chance to experience
+        different stories and perspectives. Hanging out with friends is an
+        important aspect of my life, as it helps me maintain strong social
+        connections and enjoy memorable experiences together.
       </p>
     </div>
   );

@@ -22,11 +22,10 @@ function App() {
   useEffect(() => {
     const mouseMove = (e) => {
       setMousePos({
-        x: e.clientX -500,
-        y: e.clientY-500,
+        x: e.clientX - 2250,
+        y: e.clientY - 2250,
       });
       // console.log(mousePos);
-      console.log(e.clientX);
     };
     window.addEventListener("mousemove", mouseMove);
 
@@ -43,7 +42,7 @@ function App() {
   };
 
   return (
-    <div className="h-[525vh] w-auto flex justify-center bg-color-background">
+    <div className="h-[267vh] w-auto flex justify-center bg-color-background">
       <div className="flex absolute justify-center gap-[8rem] max-w-[100vw] w-[98.7vw] z-20 bg-transparent">
         <LeftPanel
           aboutIsInView={aboutIsInView}
@@ -55,13 +54,13 @@ function App() {
           expReff={expReff}
           projectReff={projectReff}
         />
-        </div>
+      </div>
       <motion.div
         variants={variant}
+        transition={{ ease : "linear", duration: 0.3 , type: "spring" }}
         animate="default"
-        className="grad w-[1000px] h-[1000px] rounded-full fixed top-0 left-0 z-1 opacity-10"
+        className="grad w-[4500px] h-[4500px] rounded-full fixed top-0 left-0 z-1 "
       />
-
     </div>
   );
 }

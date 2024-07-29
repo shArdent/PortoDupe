@@ -1,13 +1,11 @@
 import Bubble from "./Bubble";
 
+// eslint-disable-next-line react/prop-types
 const ExpCard = ({ time, place, position, children, expCardReff }) => {
-  
   const fromExpCard = expCardReff;
   return (
     <div className="mb-4" id="experience" ref={fromExpCard}>
-      <div
-        className="group flex gap-10 hover:bg-color-paragpraph hover:bg-opacity-10 transition-all rounded py-3 px-5 cursor-pointer"
-      >
+      <div className="flex gap-10 hover:bg-color-paragpraph hover:bg-opacity-10 transition-all rounded py-3 px-5 cursor-pointer">
         <p className="text-color-paragpraph text-xs mt-[5px] w-[7rem]">
           {time}
         </p>
@@ -20,10 +18,9 @@ const ExpCard = ({ time, place, position, children, expCardReff }) => {
           </a>
           <p className="text-color-paragpraph text-sm">{children}</p>
           <div className="flex flex-wrap gap-2 max-w-[40vw]">
+            <Bubble text={"HTML"} />
+            <Bubble text={"CSS"} />
             <Bubble text={"JavaScript"} />
-            <Bubble text={"C++"} />
-            <Bubble text={"TypeScript"} />
-            <Bubble text={"Next.JS"} />
           </div>
         </div>
       </div>
