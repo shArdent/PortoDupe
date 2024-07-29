@@ -42,7 +42,7 @@ function App() {
   };
 
   return (
-    <div className="h-[267vh] w-auto flex justify-center bg-color-background">
+    <div className="h-[300vh] w-auto flex justify-center bg-color-background">
       <div className="flex absolute justify-center gap-[8rem] max-w-[100vw] w-[98.7vw] z-20 bg-transparent">
         <LeftPanel
           aboutIsInView={aboutIsInView}
