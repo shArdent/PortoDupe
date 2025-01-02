@@ -1,6 +1,6 @@
-import image from "../../../../public/ss.png";
-import sewaMobil from "../../../../public/sewa-mobil.png";
-import donorkan from "../../../../public/donorkan.png";
+import image from "/ss.png";
+import sewaMobil from "/sewa-mobil.png";
+import donorkan from "/donorkan.png";
 
 // eslint-disable-next-line react/prop-types
 const ProjectCard = ({ projectCardReff }) => {
