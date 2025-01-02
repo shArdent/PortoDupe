@@ -8,7 +8,7 @@ const ProjectCard = ({ projectCardReff }) => {
         {
             id: 1,
             gambar: image,
-            judul: "Portofolio",
+            judul: "Portfolio",
             href: "https://github.com/shArdent/PortoDupe",
             description:
                 "Portfolio using design from Brittany Chiang. Build with React js vite and Tailwind CSS and deployed with vercel.",
