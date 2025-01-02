@@ -1,4 +1,3 @@
-import ContactFooter from "../ContactFooter";
 import About from "./About";
 import ExpCard from "./ExpCard";
 
