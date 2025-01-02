@@ -5,11 +5,11 @@ const ExpCard = ({ time, place, position, children, expCardReff, bubbleText }) =
     const fromExpCard = expCardReff;
     return (
         <div className="mb-4" id="experience" ref={fromExpCard}>
-            <div className="flex gap-10 hover:bg-color-paragpraph hover:bg-opacity-10 transition-all rounded py-3 px-5 cursor-pointer">
-                <p className="text-color-paragpraph text-xs mt-[5px] w-[7rem]">
+            <div className="flex flex-col md:flex-row md:gap-10 gap-3 hover:bg-color-paragpraph hover:bg-opacity-10 transition-all rounded py-3 px-5 cursor-pointer">
+                <p className="text-color-paragpraph text-xs mt-[5px] md:w-[7rem]">
                     {time}
                 </p>
-                <div className="flex flex-col max-w-[70%] gap-5">
+                <div className="flex flex-col md:max-w-[70%] gap-5">
                     <div
                         href=""
                         className="text-color-highlight text-2xl group-hover:text-color-bubleText"

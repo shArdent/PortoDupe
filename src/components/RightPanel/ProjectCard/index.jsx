@@ -38,23 +38,21 @@ const ProjectCard = ({ projectCardReff }) => {
                 {data.map((item) => {
                     return (
                         <li
-                            className="flex px-5 gap-10 mb-4 group hover:bg-color-paragpraph hover:!opacity-100 hover:bg-opacity-10 transition-all rounded py-3 cursor-pointer group-hover/list:opacity-50"
+                            className="flex flex-col md-flex-row px-5 gap-10 mb-4 group hover:bg-color-paragpraph hover:!opacity-100 hover:bg-opacity-10 transition-all rounded py-3 cursor-pointer group-hover/list:opacity-50"
                             id="project"
                             key={item.id}
                         >
-                            <div>
+                            <div className="flex flex-col gap-3">
+                                <a href={item.href} className="text-color-highlight text-3xl font-semibold group-hover:text-color-bubleText">
+                                    {item.judul}
+                                </a>
                                 <img
                                     src={item.gambar}
                                     alt="Thumbnail"
                                     className="text-color-paragpraph text-xs mt-[5px] min-w-[7rem]"
-                                    width={100}
-                                    height={200}
+                                    width={400}
                                 />
-                            </div>
-                            <div className="flex flex-col gap-3">
-                                <a href={item.href} className="text-color-highlight text-2xl group-hover:text-color-bubleText">
-                                    {item.judul}
-                                </a>
+
                                 <p className="text-color-paragpraph text-sm">
                                     {item.description}
                                 </p>
