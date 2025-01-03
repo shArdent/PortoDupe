@@ -1,6 +1,7 @@
 import image from "/ss.png";
 import sewaMobil from "/sewa-mobil.png";
 import donorkan from "/donorkan.png";
+import dawsavings from "/dawsavings.svg"
 
 // eslint-disable-next-line react/prop-types
 const ProjectCard = ({ projectCardReff }) => {
@@ -27,8 +28,16 @@ const ProjectCard = ({ projectCardReff }) => {
             judul: "Donor-kan",
             href: "https://github.com/shArdent/ICONIC",
             description:
-                "Web application to manage blood request and donation. Build with next JS, tailwind and TypeScript. (currently still in development)",
+                "Web application to manage blood request and donation. Built with next JS, tailwind and TypeScript.",
         },
+        {
+            id: 4,
+            gambar: dawsavings,
+            judul: "Daw Savings",
+            href: "https://github.com/shArdent/DawSaving-Bun",
+            description:
+                "Mobile application to manage elementary school studnt's saving. This app created using react native expo and bun as run time."
+        }
     ];
 
     const fromProjectCard = projectCardReff;
@@ -53,7 +62,7 @@ const ProjectCard = ({ projectCardReff }) => {
                                     width={400}
                                 />
 
-                                <p className="text-color-paragpraph text-sm">
+                                <p className="text-color-paragpraph text-sm max-w-[400px]">
                                     {item.description}
                                 </p>
                             </div>
