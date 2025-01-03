@@ -51,10 +51,10 @@ const ProjectCard = ({ projectCardReff }) => {
                             id="project"
                             key={item.id}
                         >
-                            <div className="flex flex-col gap-3">
-                                <a href={item.href} className="text-color-highlight text-3xl font-semibold group-hover:text-color-bubleText">
+                            <a href={item.href} className="flex flex-col gap-3">
+                                <h1 className="text-color-highlight text-3xl font-semibold group-hover:text-color-bubleText">
                                     {item.judul}
-                                </a>
+                                </h1>
                                 <img
                                     src={item.gambar}
                                     alt="Thumbnail"
@@ -65,7 +65,7 @@ const ProjectCard = ({ projectCardReff }) => {
                                 <p className="text-color-paragpraph text-sm max-w-[400px]">
                                     {item.description}
                                 </p>
-                            </div>
+                            </a>
                         </li>
                     );
                 })}
